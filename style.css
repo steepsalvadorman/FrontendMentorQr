@@ -1,0 +1,58 @@
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    display: flex; /* Convertir en contenedor Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
+    margin: 0; /* Eliminar márgenes */
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s;
+    width: 320px;
+    height: 497px;
+}
+
+.image-qr-code {
+    border-radius: 10px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-weight: 700;
+    margin-top: 25px;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.texto {
+    color: hsl(220, 15%, 55%);
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+ /* Consulta de medios para dispositivos móviles */
+ @media (max-width: 480px) {
+    .tarjeta {
+        width: 80%; /* Ajustar el ancho de la tarjeta en dispositivos móviles */
+        height: auto; /* Permitir que la altura se ajuste automáticamente */
+        padding: 20px; /* Añadir un poco de padding para mejor apariencia */
+    }
+
+    h1 {
+        font-size: 20px; /* Ajustar el tamaño de la fuente del título en dispositivos móviles */
+    }
+
+    .texto {
+        font-size: 16px; /* Ajustar el tamaño de la fuente del texto en dispositivos móviles */
+    }
+}
